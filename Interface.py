@@ -14,9 +14,9 @@ if st.button('Predict'):
      result=clf.predict([[a,b,c,d]]).squeeze()
      if result==o:
           st.success("Setosa")
-      elif result==1:
+     elif result==1:
           st.success("Versicolor")
-      else:
+     else:
           st.success("Virginica")
    
    
