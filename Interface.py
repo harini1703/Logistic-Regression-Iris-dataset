@@ -9,4 +9,6 @@ d=st.number_input('Enter the Petal width' )
 
 result=''
 if st.button('Predict'):
+     result=clf.predict([[a,b,c,d]]).squeeze()
+   
    
