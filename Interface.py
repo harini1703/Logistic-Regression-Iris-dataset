@@ -1,6 +1,6 @@
 import pickle
 import streamlit as st
-import numpy as np
+
 
 pickle_in=open('flowers.pkl','rb')
 clf=pickle.load(pickle_in)
@@ -13,7 +13,7 @@ d=st.number_input('Enter the Petal width' )
 result=''
 if st.button('Predict'):
      result=clf.predict([[a,b,c,d]]).squeeze()
-     if result==o:
+     if result==0:
           st.success("Setosa")
      elif result==1:
           st.success("Versicolor")
