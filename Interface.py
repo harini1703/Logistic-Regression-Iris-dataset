@@ -2,7 +2,7 @@ import pickle
 import streamlit as st
 
 
-pickle_in=open('flowers.pkl','rb')
+pickle_in=open('flowers .pkl','rb')
 clf=pickle.load(pickle_in)
 
 a=st.number_input('Enter the Sepal Length' )
