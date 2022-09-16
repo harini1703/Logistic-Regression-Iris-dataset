@@ -11,8 +11,8 @@ c=st.number_input('Enter the Petal length' )
 d=st.number_input('Enter the Petal width' )
 
 result=''
-if st.button('Predict'):
-     result=forecast.predict([[a,b,c,d]])
+if st.button("Predict"):
+     result=forecast.predict([[a,b,c,d]]).squeeze()
      if result==0:
           st.success("Setosa")
      elif result==1:
