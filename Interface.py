@@ -3,7 +3,7 @@ import streamlit as st
 
 
 pickle_in=open('flowers .pkl','rb')
-model=pickle.load(pickle_in)
+forecast=pickle.load(pickle_in)
 
 a=st.number_input('Enter the Sepal Length' )
 b=st.number_input('Enter the Sepal Width'  )
@@ -12,7 +12,7 @@ d=st.number_input('Enter the Petal width' )
 
 result=''
 if st.button('Predict'):
-     result=model.predict([[a,b,c,d]])
+     result=forecast.predict([[a,b,c,d]])
      if result==0:
           st.success("Setosa")
      elif result==1:
