@@ -1,4 +1,5 @@
 import pickle
+import streamlit as st
 pickle_in=open('flowers.pkl','rb')
 clf=pickle.load(pickle_in)
 
