@@ -12,7 +12,7 @@ d=st.number_input('Enter the Petal width' )
 
 result=''
 if st.button('Predict'):
-     result=clf.predict([[a,b,c,d]]).squeeze()
+     result=clf.predict([[a,b,c,d]])
      if result==0:
           st.success("Setosa")
      elif result==1:
